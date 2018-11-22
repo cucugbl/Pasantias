@@ -8,9 +8,13 @@
 
   .verde{
       color: white;
-      background-color: #1dd7da;
+      background-color: #3d4147;
   }
 .example-button-row button,
 .example-button-row a {
   margin-right: 8px;
+  
+}
+.aa {
+  position: fixed;
 }

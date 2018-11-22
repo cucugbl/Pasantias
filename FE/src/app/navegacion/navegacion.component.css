@@ -17,13 +17,15 @@
   z-index: 1;
 }
 
-.verde{
-  color: white;
-  background-color: #1dd7da;
+.plateado{
+  color: rgb(167, 165, 165);
+  background-color: #22252a;
 }
 
 .margen{
-  margin: 60px;
+  
   margin-left: 0%;
   margin-right: 0%;
+  margin-bottom: 0%;
+  margin-top: 6%;
 }

@@ -1,18 +1,18 @@
-<mat-sidenav-container class="sidenav-container" >
-  <mat-sidenav #drawer class="sidenav margen" fixedInViewport="true"
+<mat-sidenav-container class="sidenav-container plateado" >
+  <mat-sidenav #drawer class="sidenav margen plateado" fixedInViewport="true"
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)"
       >
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar class="plateado">Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#" class="plateado">Link 1</a>
+      <a mat-list-item href="#" class="plateado">Link 2</a>
+      <a mat-list-item href="#" class="plateado">Link 3</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar class="verde">
+    <mat-toolbar class="plateado">
       <button
         type="button"
         aria-label="Toggle sidenav"
