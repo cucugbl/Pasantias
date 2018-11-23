@@ -10,13 +10,15 @@ import { HeaderComponent } from './header/header.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { NoticiasComponent } from './noticias/noticias.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     HeaderComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    NoticiasComponent
   ],
   imports: [
     BrowserModule,

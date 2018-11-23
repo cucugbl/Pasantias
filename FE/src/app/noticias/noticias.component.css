@@ -1,0 +1,17 @@
+
+.example-card {
+    max-width: 30%;
+  }
+  
+  .example-header-image {
+    background-image: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/12/11/5a2f0f7ad3c49.jpeg');
+    background-size: cover;
+  }
+  
+  .margen{
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+  
+    
