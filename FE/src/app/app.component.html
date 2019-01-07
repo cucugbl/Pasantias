@@ -31,7 +31,37 @@
 <body class="color">
 
 <app-header></app-header>
-<app-navegacion></app-navegacion>
+<mat-sidenav-container class="sidenav-container nube">
+    <mat-sidenav #drawer class="sidenav margen nube"  fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
+      <mat-toolbar class="nube elevar2">Outline</mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item href="#" class="nube">Link 1</a>
+        <a mat-list-item href="#" class="nube">Link 2</a>
+        <a mat-list-item href="#" class="nube">Link 3</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <mat-toolbar class="plateado mover elevar">
+        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <button mat-icon-button  >
+            <mat-icon>mood</mat-icon>
+            <span mat-list-item href="http://localhost:4200/context/" >PARAMOSUS</span>
+          </button>
+      
+        <span class="example-spacer"></span>
+        <button mat-button>Datos</button>
+        <button mat-button>Contactos</button>
+        <button mat-icon-button matTooltip="Ingresar">
+          <mat-icon>move_to_inbox</mat-icon>
+        </button>
+      </mat-toolbar>
+    <router-outlet></router-outlet>
+      
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 
 
 

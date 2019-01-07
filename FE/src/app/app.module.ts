@@ -10,13 +10,21 @@ import { HeaderComponent } from './header/header.component';
 import { NavegacionComponent } from './navegacion/navegacion.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { RutaObjectivesComponent } from './ruta-objectives/ruta-objectives.component';
+import { Ruta404Component } from './ruta404/ruta404.component';
+import { RuraContextComponent } from './rura-context/rura-context.component';
+import { RutaContextComponent } from './ruta-context/ruta-context.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PrincipalComponent,
     HeaderComponent,
-    NavegacionComponent
+    NavegacionComponent,
+    RutaObjectivesComponent,
+    Ruta404Component,
+    RuraContextComponent,
+    RutaContextComponent
   ],
   imports: [
     BrowserModule,
