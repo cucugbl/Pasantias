@@ -14,6 +14,8 @@ import { RutaObjectivesComponent } from './ruta-objectives/ruta-objectives.compo
 import { Ruta404Component } from './ruta404/ruta404.component';
 import { RuraContextComponent } from './rura-context/rura-context.component';
 import { RutaContextComponent } from './ruta-context/ruta-context.component';
+import { RutaProfileComponent } from './ruta-profile/ruta-profile.component';
+import { RutaNextActivitiesComponent } from './ruta-next-activities/ruta-next-activities.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { RutaContextComponent } from './ruta-context/ruta-context.component';
     RutaObjectivesComponent,
     Ruta404Component,
     RuraContextComponent,
-    RutaContextComponent
+    RutaContextComponent,
+    RutaProfileComponent,
+    RutaNextActivitiesComponent
   ],
   imports: [
     BrowserModule,

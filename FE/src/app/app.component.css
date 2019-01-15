@@ -1,5 +1,5 @@
 .color{
-    background-color: #f5f5f5;
+    background-color: #1ca7b6;
 }
 
 .sidenav-container {
@@ -28,8 +28,9 @@
   
   .plateado{
     color: #eaf0f1;
-    background-color: #616161;
+    background-color: #1ca7b6;
   }
+  
   .nube{
     color: #616161;
     background-color: #f5f5f5;
@@ -66,4 +67,9 @@
   .example-button-row button,
   .example-button-row a {
   margin-right: 8px; 
+  }
+
+  .plateado1{
+    color: #eaf0f1;
+    background-color: #004d6a;
   }
