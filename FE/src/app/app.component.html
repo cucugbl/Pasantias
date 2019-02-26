@@ -1,58 +1,18 @@
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-
-    .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      min-height: 200px;
-    }
-
-    /* Hide the carousel text when the screen is less than 600 pixels wide */
-    @media (max-width: 600px) {
-      .carousel-caption {
-        display: none; 
-      }
-    }
-  </style>
-</head>
 <body class="color">
 
-<app-header></app-header>
-<mat-sidenav-container class="sidenav-container nube">
-    <mat-sidenav #drawer class="sidenav margen plateado1"  fixedInViewport="true" [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)">
-      <mat-toolbar class="plateado1 elevar2">Outline</mat-toolbar>
-      <mat-nav-list>
-          <a  routerLink="/context" class="plateado1">Context</a>
-        <a  routerLink="/objectives" class="plateado1">Main objective</a>
-        <a  routerLink="/profile" class="plateado1">Profile scale</a>
-        <a routerLink="/next-activities" class="plateado1">Next Activities</a>
-        <a routerLink="" class="plateado1">ANALISIS Y DATOS </a>
-      </mat-nav-list>
-    </mat-sidenav>
+  <app-header></app-header>
+  <mat-sidenav-container class="sidenav-container nube">
+    
     <mat-sidenav-content>
       <mat-toolbar class="plateado mover elevar">
-        <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
-          <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+       
+        <button mat-icon-button>
+          <mat-icon href="#">terrain</mat-icon>
+          <span mat-list-item href="#"> Linking global change with soil and water conservation in the
+            High Andes</span>
         </button>
-        <button mat-icon-button  >
-            <mat-icon href="#">mood</mat-icon>
-            <span mat-list-item href="#" >PARAMOSUS</span>
-          </button>
-      
+
         <span class="example-spacer"></span>
         <button mat-button>Datos</button>
         <button mat-button>Contactos</button>
@@ -60,12 +20,11 @@
           <mat-icon>move_to_inbox</mat-icon>
         </button>
       </mat-toolbar>
-    <router-outlet></router-outlet>
-      
+      <router-outlet></router-outlet>
+
     </mat-sidenav-content>
   </mat-sidenav-container>
 
-
+  
 
 </body>
-</html>

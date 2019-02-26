@@ -1,0 +1,23 @@
+<ngb-carousel *ngIf="images">
+  <ng-template ngbSlide>
+    <img [src]="images[0]" alt="Ecuador">
+    <div class="carousel-caption">
+      <h1>Ecuador</h1>
+      <p>Uno de los primeros países que han establecido el medio ambiente como una prioridad nacional.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[1]" alt="QuitoCuenca">
+    <div class="carousel-caption">
+      <h1>Quito y Cuenca</h1>
+      <p>Dos ciudades que son parte de los Andes ecuatorianos.</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img [src]="images[2]" alt="Random third slide">
+    <div class="carousel-caption">
+      <h3>Escuela Politécnica Nacional y Universidad de Cuenca</h3>
+      <p>El proyecto constituye una de las primeras iniciativas de investigación en colaboración entre estas dos instituciones.</p>
+    </div>
+  </ng-template>
+</ngb-carousel>

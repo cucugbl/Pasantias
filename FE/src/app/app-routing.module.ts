@@ -7,22 +7,34 @@ import { NavegacionComponent } from './navegacion/navegacion.component';
 import { RutaContextComponent } from './ruta-context/ruta-context.component';
 import { RutaProfileComponent } from './ruta-profile/ruta-profile.component';
 import { RutaNextActivitiesComponent } from './ruta-next-activities/ruta-next-activities.component';
+import { HomeComponent } from './rutas/home/home.component';
+import { SummaryComponent } from './rutas/summary/summary.component';
 
 const routes: Routes = [
-  {path:"", pathMatch: "full", redirectTo: "context"} , 
- /* {path:"inicio", component: NavegacionComponent, children:[
-    {path:"context", component:RutaContextComponent},
-    {path:"principal", component: PrincipalComponent} 
-  ]} , */
-  {path:"context", component:RutaContextComponent},
-  {path:"principal", component: PrincipalComponent} , 
-  {path:"objectives", component: RutaObjectivesComponent} , 
-  {path:"profile", component: RutaProfileComponent} , 
-  {path:"no-encontrado", component: Ruta404Component} , 
-  {path:"next-activities", component: RutaNextActivitiesComponent} , 
-  {path:"**", redirectTo: "no-encontrado"} 
+  { path: "", pathMatch: "full", redirectTo: "home" },
+  {
+    path: 'home',
+    component: HomeComponent,
+    children: [{
+      path: 'summary',
+      component: SummaryComponent,
+    }]
+  },
+  /* {path:"inicio", component: NavegacionComponent, children:[
+     {path:"context", component:RutaContextComponent},
+     {path:"principal", component: PrincipalComponent} 
+   ]} , */
 
-];
+  { path: "context", component: RutaContextComponent },
+  { path: "principal", component: PrincipalComponent },
+  { path: "objectives", component: RutaObjectivesComponent },
+  { path: "profile", component: RutaProfileComponent },
+  { path: "no-encontrado", component: Ruta404Component },
+  { path: "next-activities", component: RutaNextActivitiesComponent },
+  { path: "**", redirectTo: "no-encontrado" },
+
+
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
